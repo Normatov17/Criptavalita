@@ -480,6 +480,18 @@ video {
 .top-\[470px\] {
   top: 470px;
 }
+.top-96 {
+  top: 24rem;
+}
+.top-52 {
+  top: 13rem;
+}
+.left-0 {
+  left: 0px;
+}
+.top-2\/3 {
+  top: 66.666667%;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -517,11 +529,17 @@ video {
 .max-w-md {
   max-width: 28rem;
 }
+.max-w-\[408px\] {
+  max-width: 408px;
+}
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.flex-col {
+  flex-direction: column;
 }
 .flex-col-reverse {
   flex-direction: column-reverse;
@@ -556,18 +574,11 @@ video {
 .gap-y-16 {
   row-gap: 4rem;
 }
-.gap-x-20 {
-  -moz-column-gap: 5rem;
-       column-gap: 5rem;
-}
 .overflow-hidden {
   overflow: hidden;
 }
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-.overflow-y-hidden {
-  overflow-y: hidden;
 }
 .scroll-smooth {
   scroll-behavior: smooth;
@@ -636,14 +647,19 @@ video {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .pb-12 {
   padding-bottom: 3rem;
 }
 .pb-20 {
   padding-bottom: 5rem;
-}
-.pb-44 {
-  padding-bottom: 11rem;
 }
 .pl-1 {
   padding-left: 0.25rem;
@@ -680,6 +696,9 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-\[40px\] {
+  font-size: 40px;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -691,6 +710,12 @@ video {
 }
 .uppercase {
   text-transform: uppercase;
+}
+.leading-10 {
+  line-height: 2.5rem;
+}
+.leading-normal {
+  line-height: 1.5;
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -735,6 +760,11 @@ border-radius: 32px;
 .hover\:text-green-700:hover {
   --tw-text-opacity: 1;
   color: rgb(21 128 61 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-70:hover {
@@ -788,6 +818,10 @@ border-radius: 32px;
     padding-bottom: 7rem;
   }
 
+  .md\:pb-44 {
+    padding-bottom: 11rem;
+  }
+
   .md\:pt-\[72px\] {
     padding-top: 72px;
   }
@@ -795,6 +829,14 @@ border-radius: 32px;
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:text-\[40px\] {
+    font-size: 40px;
+  }
+
+  .md\:leading-normal {
+    line-height: 1.5;
   }
 }
 
