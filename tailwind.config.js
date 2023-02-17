@@ -10,7 +10,8 @@ module.exports = {
 
       colors: {
         brand: {
-          siyoxrang: '#0D0D2B'
+          siyoxrang: '#0D0D2B',
+          market: '#2B076E'
         },
       },
 
