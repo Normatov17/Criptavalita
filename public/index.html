@@ -11,7 +11,7 @@
     </head>
     <body class="overflow-x-idden font-rubik">
         <section class="relative bg-brand-siyoxrang pt-10 md:pt-[72px] overflow-hidden">
-            <div class="max-w-1240 px-5 mx-auto flex items-center justify-between pb-20">
+            <div class="max-w-1240 px-5 mx-auto flex items-center justify-between pb-20 relative">
                 <a href="#" class="hover:opacity-70">
                     <svg width="135" height="40" viewBox="0 0 135 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.9999 40C31.0456 40 39.9999 31.0457 39.9999 20C39.9999 8.9543 31.0456 0 19.9999 0C8.95424 0 -6.10352e-05 8.9543 -6.10352e-05 20C-6.10352e-05 31.0457 8.95424 40 19.9999 40Z" fill="white" fill-opacity="0.1"/>
@@ -36,9 +36,23 @@
                     <button class="hidden sm:block text-base text-white border-2 border-transparent font-medium py-3 px-8 bg-blue-700 rounded-full hover:bg-transparent hover:border-blue-800 transition duration-700">
                         Register
                     </button>
-                    <button class="md:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(241, 237, 237, 1);transform: msFilter"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+                    <!-- Hamburger Button -->
+                    <button id="menu-btn" class="block hamburger md:hidden focus:outline-none" type="button">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
                     </button>
+                </div>
+                <!-- Mobil menu -->
+                <div id="menu" class="absolute hidden p-6 rounded-lg bg-gray-700 top-8 left-6 right-6 z-50">
+                    <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
+                        <a href="#" class="w-full text-center">Products</a>
+                        <a href="#" class="w-full text-center">Features</a>
+                        <a href="#" class="w-full text-center">About</a>
+                        <a href="#" class="w-full text-center">Contact</a>
+                        <a href="#" class="w-full text-center pt-6 border-t border-gray-400">Login</a>
+                        <a href="#" class="w-full text-center py-3 rounded-full bg-gray-400">Register</a>
+                    </div>
                 </div>
             </div>
 
@@ -142,7 +156,7 @@
         </section>
 
         <!-- Check how much you can earn -->
-        <section class="bg-brand-siyoxrang pt-16 md:pt-24 pb-52">
+        <section class="bg-brand-siyoxrang pt-16 md:pt-24 pb-16">
             <div class="max-w-5xl px-5 mx-auto flex flex-col items-center justify-center">
                 <h2 class="text-[40px] text-white font-bold mb-6">
                     Check how much you can earn
@@ -150,6 +164,133 @@
                 <p class="max-w-[622px] text-lg text-white font-normal text-center">
                     Let’s check your hash rate to see how much you will earn today, Exercitation veniam consequat sunt nostrud amet.
                 </p>
+            </div>
+        </section>
+
+        <div class="w-full relative">
+            <div class="absolute left-0 top-0 right-0 bg-brand-siyoxrang h-1/3"></div>
+            <div class="max-w-[942px] mx-auto relative">
+                <img class="cursor-pointer" src="./img/gdfdihdwhd.svg" alt="">
+            </div>
+        </div>
+
+        <!-- tarade securly -->
+        <section class="bg-white py-12 md:py-24 ">
+            <div class="max-w-1240 px-5 mx-auto">
+                <h2 class="max-w-[741px] text-3xl leading-tight md:text-[40px] font-bold text-center mx-auto mb-16">
+                    Trade securely and market the high growth cryptocurrencies.
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-11">
+                    <!-- Item 1 -->
+                    <a href="#" class="inline-block py-12 px-6 rounded-2xl shadow-2xl shadow-gray-300 hover:-translate-y-1 transition duration-500 hover:bg-brand-market group">
+                        <span class="flex flex-col items-center">
+                            <span class="mb-12">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="40" cy="40" r="40" fill="#C4C4C4"/>
+                                    <g clip-path="url(#clip0_1_95)">
+                                    <path d="M78.8035 49.6732C73.4591 71.1132 51.7369 84.1463 30.3276 78.8016C8.88695 73.4573 -4.14617 51.736 1.19852 30.327C6.54289 8.88696 28.2335 -4.14617 49.6741 1.19852C71.0835 6.51164 84.1482 28.2329 78.8035 49.6732Z" fill="url(#paint0_linear_1_95)"/>
+                                    <path d="M59.0449 35.0159C59.8261 29.7034 55.7949 26.8284 50.2324 24.9222L52.0449 17.7034L47.6699 16.6097L45.9199 23.6409C44.7636 23.3597 43.5761 23.0784 42.3886 22.8284L44.1386 15.7659L39.7636 14.6722L37.9824 21.8597C37.0136 21.6409 36.0761 21.4222 35.1699 21.2034V21.1722L29.1074 19.6722L27.9511 24.3597C27.9511 24.3597 31.2011 25.1097 31.1386 25.1409C32.9199 25.5784 33.2324 26.7659 33.1699 27.7034L31.1074 35.9222C31.2324 35.9534 31.3886 35.9847 31.5761 36.0784C31.4199 36.0472 31.2636 36.0159 31.1074 35.9534L28.2324 47.4534C28.0136 47.9847 27.4511 48.7972 26.2324 48.4847C26.2636 48.5472 23.0449 47.7034 23.0449 47.7034L20.8574 52.7347L26.5761 54.1722C27.6386 54.4534 28.6699 54.7034 29.7011 54.9847L27.8886 62.2659L32.2636 63.3597L34.0761 56.1409C35.2636 56.4534 36.4511 56.7659 37.5761 57.0472L35.7949 64.2347L40.1699 65.3284L41.9824 58.0472C49.4824 59.4534 55.1074 58.8909 57.4511 52.1097C59.3574 46.6722 57.3574 43.5159 53.4199 41.4534C56.3261 40.7972 58.4824 38.8909 59.0449 35.0159ZM49.0136 49.0784C47.6699 54.5159 38.4824 51.5784 35.5136 50.8284L37.9199 41.1722C40.8886 41.9222 50.4511 43.3909 49.0136 49.0784ZM50.3886 34.9222C49.1386 39.8909 41.5136 37.3597 39.0449 36.7347L41.2324 27.9847C43.7011 28.6097 51.6699 29.7659 50.3886 34.9222Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_1_95" x1="39.9785" y1="-0.0190779" x2="39.9785" y2="79.992" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F9AA4B"/>
+                                    <stop offset="1" stop-color="#F7931A"/>
+                                    </linearGradient>
+                                    <clipPath id="clip0_1_95">
+                                    <rect width="80" height="80" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg> 
+                            </span>     
+                            <p class="flex items-end gap-2 mb-4">
+                                <span class="text-3xl font-bold group-hover:text-white transition duration-500">Bitcoin</span>
+                                <span class="text-lg font-medium text-gray-700 group-hover:text-white transition duration-500">BTC</span>
+                            </p>          
+                            <p class="max-w-[322px] text-base text-center group-hover:text-white transition duration-500 mb-6">
+                                Digital currency in which a record of transactions is maintained.
+                            </p>               
+                            <span class="flex items-center gap-6 group-hover:px-4 group-hover:bg-blue-700 rounded-full transition duration-1000">
+                                <span class="hidden group-hover:inline-block group-hover:text-white transition duration-1000">Start mining</span>
+                                <span>
+                                    <svg class="group-hover:w-9 group-hover:fill-white" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="32" cy="32" r="31" stroke="#2B076E" stroke-opacity="0.2" stroke-width="2"/>
+                                        <path d="M28.9999 42.0002C28.7367 42.0017 28.4758 41.9512 28.2321 41.8517C27.9885 41.7522 27.7668 41.6055 27.5799 41.4202C27.3925 41.2342 27.2437 41.013 27.1422 40.7693C27.0406 40.5256 26.9883 40.2642 26.9883 40.0002C26.9883 39.7362 27.0406 39.4747 27.1422 39.231C27.2437 38.9873 27.3925 38.7661 27.5799 38.5802L34.1999 32.0002L27.8399 25.3802C27.4674 25.0054 27.2584 24.4985 27.2584 23.9702C27.2584 23.4418 27.4674 22.9349 27.8399 22.5602C28.0259 22.3727 28.2471 22.2239 28.4908 22.1224C28.7345 22.0209 28.9959 21.9686 29.2599 21.9686C29.524 21.9686 29.7854 22.0209 30.0291 22.1224C30.2728 22.2239 30.494 22.3727 30.6799 22.5602L38.3999 30.5602C38.7664 30.934 38.9717 31.4367 38.9717 31.9602C38.9717 32.4837 38.7664 32.9863 38.3999 33.3602L30.3999 41.3602C30.2204 41.554 30.0043 41.7104 29.764 41.8203C29.5237 41.9301 29.264 41.9913 28.9999 42.0002Z" fill="#3671E9"/>
+                                    </svg>                                        
+                                </span>
+                            </span> 
+                        </span>
+                    </a>
+
+                    <!-- Item 2 -->
+                    <a href="#" class="inline-block py-12 px-6 rounded-2xl shadow-2xl shadow-gray-300 hover:-translate-y-1 transition duration-500 hover:bg-brand-market group">
+                        <span class="flex flex-col items-center">
+                            <span class="mb-12">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="40" cy="40" r="40" fill="#1181E8"/>
+                                    <g clip-path="url(#clip0_1_116)">
+                                    <path d="M39.89 51.9385L25.1555 43.243L39.881 64.0015L54.623 43.243L39.881 51.9385H39.89ZM40.109 16L25.3805 40.4455L40.109 49.156L54.8435 40.4545L40.109 16Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_116">
+                                    <rect width="48" height="48" fill="white" transform="translate(16 16)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </span>     
+                            <p class="flex items-end gap-2 mb-4">
+                                <span class="text-3xl font-bold group-hover:text-white transition duration-500">Ethereum</span>
+                                <span class="text-lg font-medium text-gray-700 group-hover:text-white transition duration-500">ETH</span>
+                            </p>          
+                            <p class="max-w-[322px] text-base text-center group-hover:text-white transition duration-500 mb-6">
+                                Blockchain technology to create and run decentralized digital applications.
+                            </p>               
+                            <span class="flex items-center gap-6 group-hover:px-4 group-hover:bg-blue-700 rounded-full transition duration-1000">
+                                <span class="hidden group-hover:inline-block group-hover:text-white transition duration-1000">Start mining</span>
+                                <span>
+                                    <svg class="group-hover:w-9 group-hover:fill-white" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="32" cy="32" r="31" stroke="#2B076E" stroke-opacity="0.2" stroke-width="2"/>
+                                        <path d="M28.9999 42.0002C28.7367 42.0017 28.4758 41.9512 28.2321 41.8517C27.9885 41.7522 27.7668 41.6055 27.5799 41.4202C27.3925 41.2342 27.2437 41.013 27.1422 40.7693C27.0406 40.5256 26.9883 40.2642 26.9883 40.0002C26.9883 39.7362 27.0406 39.4747 27.1422 39.231C27.2437 38.9873 27.3925 38.7661 27.5799 38.5802L34.1999 32.0002L27.8399 25.3802C27.4674 25.0054 27.2584 24.4985 27.2584 23.9702C27.2584 23.4418 27.4674 22.9349 27.8399 22.5602C28.0259 22.3727 28.2471 22.2239 28.4908 22.1224C28.7345 22.0209 28.9959 21.9686 29.2599 21.9686C29.524 21.9686 29.7854 22.0209 30.0291 22.1224C30.2728 22.2239 30.494 22.3727 30.6799 22.5602L38.3999 30.5602C38.7664 30.934 38.9717 31.4367 38.9717 31.9602C38.9717 32.4837 38.7664 32.9863 38.3999 33.3602L30.3999 41.3602C30.2204 41.554 30.0043 41.7104 29.764 41.8203C29.5237 41.9301 29.264 41.9913 28.9999 42.0002Z" fill="#3671E9"/>
+                                    </svg>                                        
+                                </span>
+                            </span> 
+                        </span>
+                    </a>
+
+                    <!-- Item 3 -->
+                    <a href="#" class="inline-block py-12 px-6 rounded-2xl shadow-2xl shadow-gray-300 hover:-translate-y-1 transition duration-500 hover:bg-brand-market group">
+                        <span class="flex flex-col items-center">
+                            <span class="mb-12">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_106)">
+                                    <circle cx="40" cy="40" r="40" fill="white"/>
+                                    <path d="M40 0C32.0888 0 24.3552 2.34596 17.7772 6.74121C11.1992 11.1365 6.07234 17.3836 3.04484 24.6927C0.0173314 32.0017 -0.774802 40.0444 0.768607 47.8036C2.31202 55.5628 6.12165 62.6902 11.7157 68.2843C17.3098 73.8784 24.4372 77.688 32.1964 79.2314C39.9556 80.7748 47.9983 79.9827 55.3074 76.9552C62.6164 73.9277 68.8635 68.8008 73.2588 62.2228C77.6541 55.6448 80 47.9112 80 40C80 29.3913 75.7857 19.2172 68.2843 11.7157C60.7828 4.21427 50.6087 0 40 0V0ZM39.1267 12.26H47.74C47.9162 12.2602 48.09 12.3012 48.2477 12.3796C48.4055 12.4581 48.543 12.5719 48.6495 12.7123C48.756 12.8527 48.8286 13.0158 48.8616 13.1888C48.8947 13.3619 48.8873 13.5403 48.84 13.71L42.0733 36.77L48.4234 34.83L47.0634 39.4467L40.65 41.3133L36.49 55.36H58.7433C58.9197 55.361 59.0935 55.4027 59.251 55.482C59.4086 55.5613 59.5457 55.6759 59.6515 55.817C59.7574 55.958 59.8292 56.1217 59.8613 56.2951C59.8935 56.4685 59.885 56.647 59.8367 56.8167L57.8967 63.4833C57.8038 63.8005 57.6107 64.079 57.3463 64.2773C57.082 64.4756 56.7605 64.583 56.43 64.5833H22.4433L28.1867 45.1767L21.8334 47.11L23.2333 42.5733L29.6 40.64L37.6734 13.3733C37.7619 13.0545 37.952 12.7733 38.2149 12.5723C38.4778 12.3714 38.7991 12.2617 39.13 12.26H39.1267Z" fill="#59C19C"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_106">
+                                    <rect width="80" height="80" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                                                      
+                            </span>     
+                            <p class="flex items-end gap-2 mb-4">
+                                <span class="text-3xl font-bold group-hover:text-white transition duration-500">Litecoin</span>
+                                <span class="text-lg font-medium text-gray-700 group-hover:text-white transition duration-500">LTC</span>
+                            </p>          
+                            <p class="max-w-[322px] text-base text-center group-hover:text-white transition duration-500 mb-6">
+                                Cryptocurrency that enables instant payments to anyone in the world.
+                            </p>               
+                            <span class="flex items-center gap-6 group-hover:px-4 group-hover:bg-blue-700 rounded-full transition duration-1000">
+                                <span class="hidden group-hover:inline-block group-hover:text-white transition duration-1000">Start mining</span>
+                                <span>
+                                    <svg class="group-hover:w-9 group-hover:fill-white" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="32" cy="32" r="31" stroke="#2B076E" stroke-opacity="0.2" stroke-width="2"/>
+                                        <path d="M28.9999 42.0002C28.7367 42.0017 28.4758 41.9512 28.2321 41.8517C27.9885 41.7522 27.7668 41.6055 27.5799 41.4202C27.3925 41.2342 27.2437 41.013 27.1422 40.7693C27.0406 40.5256 26.9883 40.2642 26.9883 40.0002C26.9883 39.7362 27.0406 39.4747 27.1422 39.231C27.2437 38.9873 27.3925 38.7661 27.5799 38.5802L34.1999 32.0002L27.8399 25.3802C27.4674 25.0054 27.2584 24.4985 27.2584 23.9702C27.2584 23.4418 27.4674 22.9349 27.8399 22.5602C28.0259 22.3727 28.2471 22.2239 28.4908 22.1224C28.7345 22.0209 28.9959 21.9686 29.2599 21.9686C29.524 21.9686 29.7854 22.0209 30.0291 22.1224C30.2728 22.2239 30.494 22.3727 30.6799 22.5602L38.3999 30.5602C38.7664 30.934 38.9717 31.4367 38.9717 31.9602C38.9717 32.4837 38.7664 32.9863 38.3999 33.3602L30.3999 41.3602C30.2204 41.554 30.0043 41.7104 29.764 41.8203C29.5237 41.9301 29.264 41.9913 28.9999 42.0002Z" fill="#3671E9"/>
+                                    </svg>                                        
+                                </span>
+                            </span> 
+                        </span>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -337,5 +478,6 @@
             </div>
         </footer>
 
+        <script src="./js/app.js"></script>
     </body>
 </html>
