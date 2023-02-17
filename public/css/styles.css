@@ -474,8 +474,11 @@ video {
 .relative {
   position: relative;
 }
-.-left-96 {
-  left: -24rem;
+.-left-40 {
+  left: -10rem;
+}
+.bottom-0 {
+  bottom: 0px;
 }
 .left-0 {
   left: 0px;
@@ -495,32 +498,21 @@ video {
 .top-\[470px\] {
   top: 470px;
 }
-.-left-52 {
-  left: -13rem;
+.left-1\/2 {
+  left: 50%;
 }
-.-left-40 {
-  left: -10rem;
+.left-1\/3 {
+  left: 33.333333%;
 }
-.bottom-0 {
-  bottom: 0px;
-}
-.-right-24 {
-  right: -6rem;
-}
-.-right-32 {
-  right: -8rem;
-}
-.-right-36 {
-  right: -9rem;
-}
-.-bottom-10 {
-  bottom: -2.5rem;
-}
-.-bottom-14 {
-  bottom: -3.5rem;
+.left-36 {
+  left: 9rem;
 }
 .z-0 {
   z-index: 0;
+}
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -531,6 +523,9 @@ video {
 }
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 .mb-6 {
   margin-bottom: 1.5rem;
@@ -544,8 +539,8 @@ video {
 .mb-9 {
   margin-bottom: 2.25rem;
 }
-.mb-14 {
-  margin-bottom: 3.5rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 .inline-block {
   display: inline-block;
@@ -580,14 +575,17 @@ video {
 .max-w-\[408px\] {
   max-width: 408px;
 }
+.max-w-\[454px\] {
+  max-width: 454px;
+}
 .max-w-\[622px\] {
   max-width: 622px;
 }
 .max-w-md {
   max-width: 28rem;
 }
-.max-w-\[454px\] {
-  max-width: 454px;
+.max-w-sm {
+  max-width: 24rem;
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -624,6 +622,9 @@ video {
 }
 .gap-8 {
   gap: 2rem;
+}
+.gap-10 {
+  gap: 2.5rem;
 }
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
@@ -679,11 +680,23 @@ video {
 .rounded-full {
   border-radius: 9999px;
 }
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
 .border-2 {
   border-width: 2px;
 }
 .border-r {
   border-right-width: 1px;
+}
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+.border-b {
+  border-bottom-width: 1px;
 }
 .border-gray-800 {
   --tw-border-opacity: 1;
@@ -712,6 +725,13 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+.bg-transparent {
+  background-color: transparent;
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -720,6 +740,9 @@ video {
 }
 .p-6 {
   padding: 1.5rem;
+}
+.p-12 {
+  padding: 3rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -745,6 +768,14 @@ video {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -753,9 +784,9 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .pb-12 {
   padding-bottom: 3rem;
@@ -784,8 +815,8 @@ video {
 .pt-16 {
   padding-top: 4rem;
 }
-.pt-24 {
-  padding-top: 6rem;
+.pb-52 {
+  padding-bottom: 13rem;
 }
 .text-center {
   text-align: center;
@@ -838,6 +869,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 .transition {
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
@@ -973,6 +1008,10 @@ border-radius: 32px;
     align-items: center;
   }
 
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -1022,14 +1061,26 @@ border-radius: 32px;
     top: 20rem;
   }
 
+  .lg\:left-36 {
+    left: 9rem;
+  }
+
+  .lg\:-left-40 {
+    left: -10rem;
+  }
+
   .lg\:inline-block {
     display: inline-block;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 }
 
 @media (min-width: 1280px) {
 
-  .xl\:-right-36 {
-    right: -9rem;
+  .xl\:inline-block {
+    display: inline-block;
   }
 }
